@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculador de idade</string>
+    <string name="label_main_activity">Calculadora</string>
+    <string name="txv_titulo_edt">Insira o ano em que você nasceu</string>
+    <string name="ano_de_nascimento">Ano de nascimento aqui</string>
+    <string name="calcular">Efetuar cálculo</string>
+    <string name="txv_resultado">Sua idade atual é: %s</string>
+    <string name="toast_mensagem">Insira o ano de nascimento</string>
+
+</resources>
