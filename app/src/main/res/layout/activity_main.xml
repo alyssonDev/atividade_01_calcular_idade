@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txv_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="220dp"
+        android:text="@string/txv_titulo_edt"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edt_ano_nascimento"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txv_titulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:digits="0123456789"
+        android:gravity="center"
+        android:hint="@string/ano_de_nascimento"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="4"
+        android:padding="10dp"
+        android:textSize="22sp"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/btn_efetuar_calculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_ano_nascimento"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/calcular"
+        android:textAllCaps="false"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txv_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_efetuar_calculo"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
